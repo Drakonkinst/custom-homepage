@@ -14,7 +14,7 @@ most modern browsers.
 ## How to Use
 
 You can simply use the GitHub pages version (which does not allow for customization)
-by going [here](newtab.html) or download this folder. To set it as your homepage
+by going [here](https://drakonkinst.github.io/custom-homepage/) or download this folder. To set it as your homepage
 in Chrome, you can copypaste the local URL of newtab.html in chrome://settings/
 (Chrome Settings) under Appearance -> Show home button. To set it to your
 New Tab page, you'll need an extension such as [New Tab Redirect](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna) and link it
