@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="shortcut icon" href="resources/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="background" class="background-item"></div>
+    <div id="content">
+        <div id="upper-left">
+            <div id="datetime">
+                <div id="clock"></div>
+            </div>
+          </div>
+    
+          <div id="center">
+            <div id="greeting" class="fadein"></div>
+            <div id="search-container">
+                <span id="search-underline" class="search"></span>
+                <i id="search-icon" class="fa fa-search search"></i>
+                <input id="search-bar" placeholder="Google something..." class="search"></input>
+            </div> 
+          </div>
+    
+          <div id="bottom">
+            <div id="quote">
+              <p id="quote-body">
+                <span class="quote-body-text"></span>
+                <span class="quote-info">
+                  <span class="quote-author-text"></span>
+                  <span class="control control-fav" data-category="quote">
+                      <i class="fa fa-heart-o heart-empty-icon"></i>
+                      <i class="fa fa-heart heart-icon"></i>
+                  </span>
+                  <span class="control">
+                      <i class="fa fa-copy copy-quote icon"></i>
+                      <i class="fa fa-refresh refresh-quote icon"></i>
+                  </span>
+                  
+                </span>
+              </p>
+            </div>
+          </div>
+    
+          <div id="bottom-left"> 
+            <div id="settings">
+                <i id="settings-icon" class="fa fa-cog fa-lg"></i>
+                <div class="app-container">
+                  <div class="arrow arrow-bottom-left">
+                    <div id="settings-app" class="app">
+                      <ul id="settings-menu"></ul>
+                      <div id="info">
+                        <div id="dedication">
+                          <div id="dedication-text"></div>
+                          <div id="dedication-subtext"></div>
+                        </div>
+                      </div>
+                      <div id="settings-view-container">
+                        <div id="settings-view"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          
+          <div id="bottom-right">
+            <span id="todo">
+                <span id="todo-toggle" class="bottom-right-toggle">Todo</span>
+                <div class="app-container">
+                  <div class="arrow arrow-bottom-right">
+                    <div id="todo-app" class="app">
+                      <div id="todo-header">
+                        <div id="todo-active-list-title">Todo</div>
+                        <i class="fa fa-trash fa-lg todo-delete-finished">
+                        </i>
+                      </div>
+                      <ul id="todo-list">
+
+                      </ul>
+                      <div class="new-todo-footer">
+                        <input class ="new-todo-input" type="text" placeholder="&#8330; New Todo"></input>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </span>
+            <span id="notes">
+              <span id="notes-toggle" class="bottom-right-toggle">Notes</span>
+              <div class="app-container">
+                <div class="app-arrow arrow-bottom-right">
+                  <div id="notes-app" class="app">
+                    <div id="notes-header">
+                      <div id="notes-title">Notes</div>
+                      <div class="notes-view-title-wrapper"></div>
+                      <div class="notes-view-context-wrapper"></div>
+                    </div>
+                    <div id="notes-nav"></div>
+                    <div id="notes-content"></div>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+    </div>
+    
+    <script src="user-config.js"></script>
+    <script src="scripts/deepmerge.js"></script>
+    <script src="scripts/quotebook.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
